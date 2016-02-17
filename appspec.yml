@@ -7,8 +7,8 @@ files:
     destination: /var/www/html/awstools
 
 permissions:
-  - object: /
-    pattern: s3purl.php
+  - object: /var/www/html/awstools
+    pattern: "*.php"
     owner: ec2-user
     group: apache
     mode: 640
