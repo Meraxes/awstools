@@ -1,0 +1,16 @@
+version: 0.1
+
+os: linux 
+
+files:
+  - source: s3purl.php
+    destination: /var/www/html/awstools
+
+permissions:
+  - object: /
+    pattern: s3purl.php
+    owner: ec2-user
+    group: apache
+    mode: 640
+    type:
+      - file
